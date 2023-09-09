@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&family=Poppins&display=swap');
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background: #c9cec9;
+    text-align: center;
+}
+.player-container{
+    width: 400px;
+    height: 500px;
+    background: #e7e7e7;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.image-container{
+    position: relative;
+    top: -50px;
+    left: 50px;
+    height: 300px;
+    width: 300px;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+h2{
+    font-size: 25px;
+     font-family: 'League Spartan', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+
+}
+h3{
+    font-size: 22px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+}
+.progress-container{
+    background: #fff;
+    width: 90%;
+    margin: 20px auto;
+    height: 4px;
+    cursor: pointer;
+}
+.progress{
+    height: 100%;
+    background: #1f1f1f;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.1s linear ;
+
+}
+.duration-wrapper{
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'League Spartan', sans-serif    ;
+}
+.player-controls{
+    position: relative;
+    top: -5px;
+    width: 250px;
+    margin: auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player-controls i{
+    width: 40px;
+    margin: 0 10px;
+    box-shadow: none;
+    user-select: none;
+    cursor: pointer;
+}
+.player-container i {
+     font-size: 30px;
+}
+.player-container  .fa-play{
+    font-size: 40px;
+}
+.player-container .fa-pause{
+  font-size: 40px;
+}
+.player-container
+.player-controls #main{
+    width: 60px;
+}
+.player-container  i:hover{
+    filter: brightness(120%);
+}
+@media screen  and (max-width:450px){
+    .player-container{
+        width: 95%;
+    }
+    .image-container{
+        height: 300px;
+        width: 90%;
+            margin: auto;
+        left: 0;
+    }
+}
